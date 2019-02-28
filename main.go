@@ -29,6 +29,6 @@ func main() {
 	r.HandleFunc("/public", YourPubHandler)
 
 	// Bind to a port and pass our router in
-	log.Fatal(http.ListenAndServe(":3000", r))
+	log.Fatal(http.ListenAndServe(":8042", r))
 
 }

@@ -5,11 +5,12 @@
   tasks:
   - name: Copy Api Service Files
     copy:
-      src: ../main
+      src: ./main
       dest: /opt/brandon/kong-service/
       owner: root
       group: root
       mode: 0640
 
   - name: Start Api
-shell: cd /opt/brandon/kong-service; npm i; nohup npm start &
+# shell: cd /opt/brandon/kong-service; npm i; nohup npm start &
+shell: cd /opt/brandon/kong-service; ./main &
