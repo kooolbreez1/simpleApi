@@ -13,4 +13,5 @@
 
   - name: Start Api
 # shell: cd /opt/brandon/kong-service; npm i; nohup npm start &
-shell: cd /opt/brandon/kong-service; ./main &
+- shell: cd /opt/brandon/kong-service;
+- shell: ./main &
