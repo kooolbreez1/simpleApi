@@ -25,8 +25,8 @@ func main() {
 	r := mux.NewRouter()
 	// Routes consist of a path and a handler function.
 	r.HandleFunc("/", YourHandler)
-	r.HandleFunc("/private", YourPrivHandler)
-	r.HandleFunc("/public", YourPubHandler)
+	r.HandleFunc("/brandon-api/auth", YourPrivHandler)
+	r.HandleFunc("/brandon-api/non-auth", YourPubHandler)
 
 	// Bind to a port and pass our router in
 	log.Fatal(http.ListenAndServe(":8042", r))
