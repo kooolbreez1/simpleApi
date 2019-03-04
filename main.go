@@ -24,7 +24,8 @@ func YourPrivHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	r := mux.NewRouter()
 	// Routes consist of a path and a handler function.
-	r.HandleFunc("/", YourHandler)
+	r.HandleFunc("/brandon-api", YourHandler)
+	r.HandleFunc("/brandon-api/", YourHandler)
 	r.HandleFunc("/brandon-api/auth", YourPrivHandler)
 	r.HandleFunc("/brandon-api/non-auth", YourPubHandler)
 
