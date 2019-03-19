@@ -12,4 +12,4 @@
       mode: 0640
 
   - name: Start Api
-    shell: cd /opt/brandon/kong-service; ./main &
+    shell: cd /opt/brandon/kong-service; nohup go run main.go
